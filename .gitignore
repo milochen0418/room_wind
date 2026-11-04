@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Poetry in-project virtualenv
+.venv/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
