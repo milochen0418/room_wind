@@ -14,3 +14,6 @@ build/
 # Editors
 .vscode/
 .idea/
+
+# Built AppleScript app (osacompile -o RoomWind.app RoomWind.applescript)
+RoomWind.app/

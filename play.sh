@@ -5,6 +5,8 @@ set -euo pipefail
 cd "$(dirname "$0")"
 # 忽略外部已啟用的虛擬環境，否則 poetry 會裝到別的目錄（例如搬移前的 .venv）
 unset VIRTUAL_ENV
+# 從 App（AppleScript）啟動時 PATH 只有系統路徑，補上 Homebrew 位置
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 need_brew() {
   command -v brew >/dev/null || { echo "需要 Homebrew：https://brew.sh" >&2; exit 1; }
